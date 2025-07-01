@@ -72,14 +72,14 @@
 
 <div align="center">
 
-![City Top View](images/Screenshot%202025-06-21%20at%2021.49.54.jpg)
-*🗺️ Complete city map perspective showcasing road networks and building layouts*
+![Unity Editor Map View](images/unity-editor-map-view.jpg)
+*🎮 Unity Editor scene view showing the complete city layout with restaurants, stadium, roads and various facilities in development mode*
 
 </div>
 
 ### 📸 Screenshot Descriptions
 - **Top Image**: 3D game main perspective showing delivery vehicles navigating through the city, with a featured burger restaurant 🍔
-- **Bottom Image**: Top-down map mode displaying complete city layout including stadiums, parks, various restaurants and facilities 🏟️
+- **Bottom Image**: Unity Editor scene view displaying the complete city layout in development mode, featuring restaurants, football stadium, road networks, and various urban facilities 🎮
 
 ---
 
@@ -137,7 +137,30 @@ cd FoodDeliveryLegend
 3. Select project folder 📂
 4. Wait for Unity to import assets ⏳
 
-#### 3️⃣ Run Game
+#### 3️⃣ Download Required Assets
+Before running the game, you'll need to download the following asset packages:
+
+**🎨 Essential Art Assets:**
+- [150+ Food Icon Pack](https://assetstore.unity.com/packages/2d/gui/icons/150-food-icon-pack-56171) - Food delivery icons
+- [FREE Food Pack](https://assetstore.unity.com/packages/3d/props/food/free-food-pack-85884) - 3D food models
+- [PolygonStarter](https://assetstore.unity.com/packages/3d/environments/landscapes/polygon-starter-pack-156819) - Low poly environment assets
+
+**🚗 Vehicle Assets:**
+- [ARCADE - FREE Racing Car](https://assetstore.unity.com/packages/3d/vehicles/land/arcade-free-racing-car-161085) - Racing car models
+
+**🏙️ City Environment:**
+- [Toon City Pack](https://assetstore.unity.com/packages/3d/environments/urban/toon-city-pack-32314) - City buildings and props
+
+**🎮 Unity Essentials (Free):**
+- [Starter Assets - First Person Controller](https://assetstore.unity.com/packages/essentials/starter-assets-first-person-character-controller-196525) - First person controls
+- [TextMeshPro](https://docs.unity3d.com/Manual/com.unity.textmeshpro.html) - Advanced text rendering (included in Unity)
+
+#### 4️⃣ Import Assets
+1. Download assets from Unity Asset Store 🛒
+2. Import them into your project 📥
+3. Follow any specific setup instructions for each asset 📋
+
+#### 5️⃣ Run Game
 1. Open `Assets/Scenes/MainScene.unity` 🎬
 2. Click Play button ▶️
 3. Enjoy the game! 🎉
@@ -202,6 +225,11 @@ Become the best delivery driver in the city! Complete all delivery missions, shu
 - **PolygonStarter** - Low poly style resources 🎨
 - **FREE Food Pack** - 3D food models 🍎
 - **Toon City Pack** - Cartoon style city 🏙️
+- **ARCADE Racing Car** - Vehicle models 🚗
+- **Starter Assets** - Character controllers 🎮
+
+### ⚠️ **Important Note**
+This project requires several Unity Asset Store packages to function properly. Make sure to download and import all the assets listed in the [Installation Guide](#-installation-guide) before running the project. Without these assets, the game scenes may appear incomplete or broken.
 
 ---
 
@@ -227,6 +255,13 @@ Have new ideas? We'd love to hear them!
 - Submit feature requests in Issues 💭
 - Explain why the feature would be useful 🤔
 - Provide specific use cases 📖
+
+### 📦 Asset Dependencies Notice
+Please note that this project uses several Unity Asset Store packages. When contributing:
+- **Do not include** copyrighted asset files in your commits
+- **Reference** asset packages by name and store link only
+- **Test** your changes with the required assets installed
+- **Document** any new asset dependencies in the README
 
 ---
 

@@ -10,7 +10,7 @@
 [![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](LICENSE)
 [![Platform](https://img.shields.io/badge/Platform-PC%20|%20Mac-lightgrey?style=for-the-badge)](https://unity.com/)
 
-![Game Main View](images/Screenshot%202025-06-21%20at%2021.49.40.jpg)
+![Game Main View](images/Burger_Town_Map.jpg)
 *🏙️ Beautiful 3D city environment featuring various restaurants and landmark buildings*
 
 ---
@@ -72,7 +72,7 @@
 
 <div align="center">
 
-![Unity Editor Map View](images/Screenshot%202025-06-21%20at%2021.49.54.jpg)
+![Unity Editor Map View](images/Burger_Town_Map.jpg)
 *🎮 Unity Editor scene view showing the complete city layout with restaurants, stadium, roads and various facilities in development mode*
 
 </div>

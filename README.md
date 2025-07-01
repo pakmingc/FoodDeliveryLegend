@@ -72,7 +72,7 @@
 
 <div align="center">
 
-![Unity Editor Map View](images/unity-editor-map-view.jpg)
+![Unity Editor Map View](images/Screenshot%202025-06-21%20at%2021.49.54.jpg)
 *🎮 Unity Editor scene view showing the complete city layout with restaurants, stadium, roads and various facilities in development mode*
 
 </div>

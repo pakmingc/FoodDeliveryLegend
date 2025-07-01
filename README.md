@@ -10,7 +10,7 @@
 [![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](LICENSE)
 [![Platform](https://img.shields.io/badge/Platform-PC%20|%20Mac-lightgrey?style=for-the-badge)](https://unity.com/)
 
-![Game Main View](images/Burger_Town_Map.jpg)
+![Game Main View](images/Burger_Town.jpg)
 *🏙️ Beautiful 3D city environment featuring various restaurants and landmark buildings*
 
 ---

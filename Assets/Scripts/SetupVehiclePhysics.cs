@@ -6,20 +6,20 @@ public class SetupVehiclePhysics : EditorWindow
     [MenuItem("Tools/Setup All Vehicle Physics")]
     public static void SetupPhysics()
     {
-        var vehicles = GameObject.FindGameObjectsWithTag("Vehicle");
-        foreach (var vehicle in vehicles)
+        var vs = GameObject.FindGameObjectsWithTag("Vehicle");
+        foreach (var v in vs)
         {
-            Rigidbody rb = vehicle.GetComponent<Rigidbody>();
-            if (!rb) rb = vehicle.AddComponent<Rigidbody>();
+            var rb = v.GetComponent<Rigidbody>() ?? v.AddComponent<Rigidbody>();
             rb.mass = 10;
             rb.useGravity = true;
             rb.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
 
-            BoxCollider col = vehicle.GetComponent<BoxCollider>();
-            if (!col) col = vehicle.AddComponent<BoxCollider>();
-            col.size = new Vector3(1f, 1f, 2f);
-            EditorUtility.SetDirty(vehicle);
+            var col = v.GetComponent<BoxCollider>() ?? v.AddComponent<BoxCollider>();
+            col.center = Vector3.zero;
+            col.size = new Vector3(1, 1, 2);
+
+            EditorUtility.SetDirty(v);
         }
-        Debug.Log("✅ 所有車輛物理設定完成！");
+        Debug.Log("All vehicle physics configured.");
     }
 }

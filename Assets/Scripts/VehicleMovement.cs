@@ -1,26 +1,27 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class VehicleMovement : MonoBehaviour
 {
-    public float speed = 5f;
-    public Transform currentWaypoint;
-    private Rigidbody rb;
+    List<Waypoint> path;
+    int pathIdx;
+    float spd;
+    public bool ReachedDestination => path != null && pathIdx >= path.Count;
 
-    void Start()
+    public void SetPath(List<Waypoint> pts, float speed)
     {
-        rb = GetComponent<Rigidbody>();
+        path = pts;
+        pathIdx = 0;
+        spd = speed;
     }
 
-    void FixedUpdate()
+    void Update()
     {
-        Vector3 direction = (currentWaypoint.position - transform.position).normalized;
-
-        // 強制令車只向前行
-        Vector3 forwardMovement = transform.forward * speed;
-        rb.velocity = new Vector3(forwardMovement.x, rb.velocity.y, forwardMovement.z);
-
-        // 慢慢旋轉朝向Waypoint
-        Quaternion targetRotation = Quaternion.LookRotation(direction);
-        rb.MoveRotation(Quaternion.Slerp(transform.rotation, targetRotation, Time.fixedDeltaTime * 5f));
+        if (path == null || pathIdx >= path.Count) return;
+        Transform tgt = path[pathIdx].transform;
+        Vector3 dir = (tgt.position - transform.position).normalized;
+        transform.position += dir * spd * Time.deltaTime;
+        transform.forward = dir;
+        if (Vector3.Distance(transform.position, tgt.position) < .2f) pathIdx++;
     }
 }

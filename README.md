@@ -265,6 +265,10 @@ Please note that this project uses several Unity Asset Store packages. When cont
 
 ---
 
+## 📫 Contact
+
+📧 pakmingc2@gmail.com
+
 ## 📄 License
 
 This project is licensed under the MIT License. See [LICENSE](LICENSE) file for details.

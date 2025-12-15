@@ -298,10 +298,6 @@ Thanks to all creators who provided free resources:
 
 ### 🌟 If you like this project, please give us a star! ⭐
 
----
-
 **🚗 Start Your Delivery Legend Journey! 🍕**
-
-*Made with ❤️ and Unity*
 
 </div> 
